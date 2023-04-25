@@ -1,0 +1,23 @@
+
+@mixin example-button{
+    background-color: green;
+    border-radius: 8px;
+    border: none;
+    padding: 10px 0;
+}
+
+@mixin example-with-params($paddingVal){
+    background-color: green;
+    border-radius: 8px;
+    border: none;
+    padding: $paddingVal;
+}
+
+
+@mixin background-image-mixin($image){
+    background-image: url($image);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+

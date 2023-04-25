@@ -1,0 +1,13 @@
+// @use './utils/variables' as variables;
+@import './utils/variables';
+
+
+@import './component/navbar';
+@import './component/mobileMenu';
+
+
+body{
+    background-color: $primaryBackgroundColor;
+}
+
+

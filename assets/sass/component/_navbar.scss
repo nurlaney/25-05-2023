@@ -1,0 +1,38 @@
+@use '../utils/mixins' as m;
+
+.header{
+    padding: 10px;
+    background-color: white;
+    &-list{
+        list-style: none;
+        display: flex;
+        &-item{
+            margin-right: 10px;
+            transition: background-color 0.5s ease;
+            padding: 5px;
+            &:hover{
+                background-color: $navbarHoverColor;
+            }
+            button{
+                @include m.example-with-params(10px)
+            }
+        }
+    }
+}
+
+.banner{
+    @include m.background-image-mixin('../assets/image/hello.png');
+    width: 600px;
+}
+
+.banner2fromotherPage{
+    @include m.background-image-mixin('../assets/image/hello.png');
+    background-attachment: fixed;
+    border-radius: 5px;
+}
+
+@media screen and (max-width: 650px) {
+    .header{
+        display: none;
+    }
+}

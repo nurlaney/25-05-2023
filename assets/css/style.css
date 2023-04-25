@@ -1,0 +1,65 @@
+.header {
+  padding: 10px;
+  background-color: white;
+}
+.header-list {
+  list-style: none;
+  display: flex;
+}
+.header-list-item {
+  margin-right: 10px;
+  transition: background-color 0.5s ease;
+  padding: 5px;
+}
+.header-list-item:hover {
+  background-color: yellow;
+}
+.header-list-item button {
+  background-color: green;
+  border-radius: 8px;
+  border: none;
+  padding: 10px;
+}
+
+.banner {
+  background-image: url("../assets/image/hello.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  width: 600px;
+}
+
+.banner2fromotherPage {
+  background-image: url("../assets/image/hello.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+  border-radius: 5px;
+}
+
+@media screen and (max-width: 650px) {
+  .header {
+    display: none;
+  }
+}
+.mobile-menu {
+  display: none;
+}
+.mobile-menu ul {
+  list-style: none;
+}
+.mobile-menu ul li {
+  padding: 20px 10px;
+  border: 1px solid gray;
+  background-color: white;
+}
+
+@media screen and (max-width: 650px) {
+  .mobile-menu {
+    display: block !important;
+  }
+}
+body {
+  background-color: rgb(9, 126, 114);
+}/*# sourceMappingURL=style.css.map */
